@@ -1,0 +1,8 @@
+# Juniper Host Locator
+
+Python tool to locate a host in the network by its IP:  
+1. Retrieves MAC from gateway devices.  
+2. Finds the switch and interface where this MAC is learned.  
+3. Multi-threaded for fast search in multi-device environments.  
+
+
