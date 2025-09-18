@@ -10,20 +10,22 @@ import yamlordereddictloader
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Event
 from datetime import datetime
+from getpass import getpass
 
 
-
-ip_address = ""
+ip_address = "" # host ip address 
 
 list_pub_switch = []
 
 list_gw = []
 
 
-map_rack = {}
+map_rack = {
+    'ip' : 'rack'
+}
 
-USER=""
-PASS=""
+USER=input("Input username: ")
+PASS=getpass("Input password: ")
 
 myYAML = """
 ---
